@@ -91,7 +91,7 @@ public class Main {
                 System.out.println("Ocurrió un error al convertir las monedas: ");
                 System.out.println(e.getMessage());
             } catch (Exception e) {
-                System.out.println("Monto incorrecto");
+                System.out.println("Ocurrió un error inesperado: ");
                 System.out.println(e.getMessage());
             }
 

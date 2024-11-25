@@ -40,7 +40,8 @@ public class ExchangeAPI {
                     .send(getRequest(baseCurrencyCode, targetCurrencyCode), HttpResponse.BodyHandlers.ofString());
 
             jsonResponse = response.body();
-        } catch (IOException | InterruptedException e) {
+        } catch (IOException | InterruptedException | IllegalArgumentException e) {
+            System.out.println("Ha ocurrido un error al consultar al API, asegurate de haber configurado correctamente tu API KEY y API URL");
             System.out.println(e.getMessage());
         }
         return jsonResponse;
