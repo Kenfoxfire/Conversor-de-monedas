@@ -18,7 +18,7 @@ public class ExchangeAPI {
 
     public ExchangeAPI() {
         Properties props = new Properties();
-        try (FileInputStream fis = new FileInputStream("application.properties")) {
+        try (FileInputStream fis = new FileInputStream("src/application.properties")) {
             props.load(fis);
             this.apiKey = props.getProperty("api.key");
             this.apiURL = props.getProperty("api.url");
