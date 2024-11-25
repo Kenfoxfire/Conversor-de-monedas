@@ -79,7 +79,7 @@ public class Main {
 
                     default:
                         System.out.println("Opcion incorrecta");
-                        break;
+                        continue;
                 }
                 System.out.println("Ingresa el monto de " + baseCurrencyName + " a convertir");
                 var baseCurrencyAmount = sc.nextLine();
